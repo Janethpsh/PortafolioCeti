@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #C89DCF;
+    color: #000000;
 }
 
 header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -24,7 +24,7 @@ section {
 }
 
 h1, h2 {
-    color: #555;
+    color: #000000;
 }
 
 #links ul {
@@ -58,7 +58,7 @@ h1, h2 {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #333;
+    background-color: #32B82A;
     color: #fff;
     position: relative;
     bottom: 0;
