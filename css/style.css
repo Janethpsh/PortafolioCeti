@@ -1,15 +1,4 @@
-/* Paleta de colores */
-:root {
-    --rosa-claro: #ffe4ec;
-    --rosa-pastel: #f8c1d9;
-    --rosa-intermedio: #f29bbd;
-    --rosa-vivo: #ea6d9b;
-    --rosa-fuerte: #e14b7e;
-    --texto-principal: #5a2d41;
-    --blanco: #ffffff;
-}
-
-/* Reset básico */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -19,14 +8,14 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom right, var(--rosa-claro), var(--rosa-pastel));
-    color: var(--texto-principal);
+    background: linear-gradient(to bottom right, #ffe4ec, #f8c1d9);
+    color: #5a2d41;
 }
 
 /* Encabezado */
 header {
-    background: linear-gradient(90deg, var(--rosa-vivo), var(--rosa-fuerte));
-    color: var(--blanco);
+    background: linear-gradient(90deg, #ea6d9b, #e14b7e);
+    color: #ffffff;
     text-align: center;
     padding: 2rem 1rem;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
@@ -47,7 +36,7 @@ header p {
     max-width: 900px;
     margin: 2rem auto;
     padding: 2rem;
-    background: var(--blanco);
+    background: #ffffff;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -59,7 +48,7 @@ header p {
 }
 
 h2 {
-    color: var(--rosa-fuerte);
+    color: #e14b7e;
     margin-bottom: 1rem;
 }
 
@@ -75,22 +64,25 @@ h2 {
 }
 
 #links a {
-    color: var(--rosa-vivo);
+    color: #ea6d9b;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 #links a:hover {
-    color: var(--rosa-fuerte);
-    transform: scale(1.1);
+    background-color: #e14b7e;
+    color: #ffffff;
+    transform: scale(1.05);
 }
 
 /* Proyectos */
 .project-card {
-    background: var(--rosa-claro);
-    border-left: 5px solid var(--rosa-vivo);
+    background: #ffe4ec;
+    border-left: 5px solid #ea6d9b;
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 10px;
@@ -98,19 +90,20 @@ h2 {
 }
 
 .project-card:hover {
-    background: var(--rosa-pastel);
+    background: #f8c1d9;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
     margin-bottom: 0.5rem;
-    color: var(--rosa-fuerte);
+    color: #e14b7e;
+    text-decoration: none; /* Quitar línea debajo del subtítulo */
 }
 
 /* Pie de página */
 footer {
-    background: var(--rosa-fuerte);
-    color: var(--blanco);
+    background: #e14b7e;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
