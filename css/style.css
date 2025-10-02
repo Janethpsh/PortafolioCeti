@@ -97,7 +97,7 @@ h2 {
 .project-card h3 {
     margin-bottom: 0.5rem;
     color: #e14b7e;
-    text-decoration: none; /* Quitar línea debajo del subtítulo */
+    text-decoration: none;
 }
 
 /* Pie de página */
@@ -115,7 +115,7 @@ footer {
 .project-card ul, .project-card ol {
     margin: 0 auto;
     display: table;
-    text-align: left;
+    text-align: right;
 }
 .project-card li {
     text-align: center;
