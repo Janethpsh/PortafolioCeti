@@ -1,51 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de Desarrollador</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      margin: 15px 0;
+      padding: 10px;
+      cursor: pointer;
+      background: #3498db;
+      color: white;
+      border-radius: 6px;
+      transition: background 0.3s;
+      user-select: none;
+    }
+
+    .project-title:hover {
+      background: #217dbb; /* más fuerte al pasar el mouse */
+    }
+
+    .project-content {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fafafa;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .images-container {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .images-container img {
+      width: 48%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      object-fit: cover;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Mi Portafolio</h1>
+  </header>
 
-    <header>
-        <h1>Karen Janeth Pacheco Gómez</h1>
-        <p>Desarrolladora de Software</p>
-    </header>
+  <div class="container">
+    <h2 class="project-title" onclick="toggleProject(1)">Mi primer proyecto</h2>
+    <div class="project-content" id="project-1">
+      <div class="images-container">
+        <img src="img/proyecto1a.jpg" alt="Proyecto 1 Imagen 1">
+        <img src="img/proyecto1b.jpg" alt="Proyecto 1 Imagen 2">
+      </div>
+      <p class="project-description">
+        Aquí puedes escribir la descripción de tu proyecto. Explica en qué consiste, 
+        qué tecnologías usaste y qué aprendiste.
+      </p>
+    </div>
 
-    <section id="about" class="card">
-        <h2>Estudiante de CETI Plantel Tonalá, cursando el 7to semestre de la carrera Desarrollo de Software en Preparatoria.</h2>
-        <p>
-            Apasionada por la tecnología, el aprendizaje constante y la mejora continua. 
-            Actualmente estudio inglés y curso la preparatoria con carrera técnica en Desarrollo 
-            de Software. Me destaco por mi capacidad de organización, disciplina y habilidad 
-            para investigar a fondo y resolver problemas.
-        </p>
-    </section>
+    <h2 class="project-title" onclick="toggleProject(2)">Mi segundo proyecto</h2>
+    <div class="project-content" id="project-2">
+      <div class="images-container">
+        <img src="img/proyecto2a.jpg" alt="Proyecto 2 Imagen 1">
+        <img src="img/proyecto2b.jpg" alt="Proyecto 2 Imagen 2">
+      </div>
+      <p class="project-description">
+        Describe este proyecto aquí. Puedes incluir detalles sobre el objetivo,
+        las funciones principales y los resultados que obtuviste.
+      </p>
+    </div>
+  </div>
 
-    <section id="links" class="card">
-        <h2>Enlaces</h2>
-        <ul>
-            <li><a href="https://github.com/Janethpsh" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/janeth-pg-17461135a" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.facebook.com/carlita.becerra.393" target="_blank">Facebook</a></li>
-        </ul>
-    </section>
-
-    <section id="projects" class="card">
-        <h2>Proyectos</h2>
-        <div id="projects-container">
-            <div class="project-card">
-                <h3>Mi Primer Proyecto</h3>
-                <p>Descripción breve del proyecto.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>2025 &copy; By Karen Janeth</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+  <script>
+    function toggleProject(id) {
+      const content = document.getElementById(`project-${id}`);
+      content.style.display = (content.style.display === "block") ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
