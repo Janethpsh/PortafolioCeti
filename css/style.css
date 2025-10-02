@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -115,7 +114,7 @@ footer {
 .project-card ul, .project-card ol {
     margin: 0 auto;
     display: table;
-    text-align: right;
+    text-align: left;
 }
 .project-card li {
     text-align: center;
