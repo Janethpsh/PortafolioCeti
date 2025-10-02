@@ -8,7 +8,8 @@
     {
         "name": "Maqueta de plumillas paso de tren.",
         "description": "Implementamos un sistema de control para una maqueta de plumillas en un paso de tren, utilizando Arduino. El sistema detecta la proximidad del tren mediante sensores y activa las plumillas para garantizar la seguridad vial. Este proyecto combina electrónica y programación para simular un entorno ferroviario realista.",
-        "imageUrl": "img/"
+        "imageUrl": "img/Form1Citas.png",
+        "imageUrl": "img/Form2Citas.png"
     },
     {
         "name": "Base de datos para una Carnicería.",
