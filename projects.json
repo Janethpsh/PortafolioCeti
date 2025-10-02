@@ -1,14 +1,23 @@
 [
     {
-        "name": "Mi Primer Proyecto",
-        "description": "Una breve descripción de lo que hace mi primer proyecto. Explica sus funcionalidades clave y tecnologías utilizadas.",
+        "name": "Calculadora de Área y Perímetro con PHP",
+        "description": "Este proyecto web permite calcular área y perímetro de figuras geométricas básicas como cuadrados, círculos y triángulos. El usuario selecciona una figura en la pantalla principal e introduce las medidas necesarias para ver los resultados calculados al instante.",
         "readmeUrl": "https://github.com/Janethpsh/FigurasCeti/blob/main/README.md",
         "repoUrl": "https://github.com/Janethpsh/FigurasCeti"
     },
     {
-        "name": "Mi Segundo Proyecto",
-        "description": "Este es otro proyecto importante. Detalla los problemas que resuelve y cómo lo implementaste.",
-        "readmeUrl": "https://raw.githubusercontent.com/[TuUsuario]/[nombre-del-otro-repo]/main/README.md",
-        "repoUrl": "https://github.com/[TuUsuario]/[nombre-del-repositorio]"
+        "name": "Maqueta de plumillas paso de tren.",
+        "description": "Implementamos un sistema de control para una maqueta de plumillas en un paso de tren, utilizando Arduino. El sistema detecta la proximidad del tren mediante sensores y activa las plumillas para garantizar la seguridad vial. Este proyecto combina electrónica y programación para simular un entorno ferroviario realista.",
+        "imageUrl": "img/"
+    },
+    {
+        "name": "Base de datos para una Carnicería.",
+        "description": "Base de datos en MySQL para gestionar inventarios, ventas y clientes en una carnicería. Evita el uso de papel que causaba problemas.",
+        "imageUrl": "img/"
+    },
+    {
+        "name": "Formulario de registro de Citas médicas.",
+        "description": "Formulario de VisualStudio diseñado para registrar citas, eliminarlas y ver su ventana de registro",
+        "imageUrl": "img/"
     }
 ]
